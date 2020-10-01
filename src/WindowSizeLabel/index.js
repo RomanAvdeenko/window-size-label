@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '../styles.module.css'
 
 export class WindowSizeLabel extends React.Component {
   state = {
@@ -19,7 +18,7 @@ export class WindowSizeLabel extends React.Component {
   }
   render() {
     return (
-      <span className={styles.test}> {this.state.windowSize.width}x{this.state.windowSize.height} </span>
+      <label> {this.state.windowSize.width}x{this.state.windowSize.height} </label>
     )
   }
 }
